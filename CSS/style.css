@@ -1,0 +1,240 @@
+body {
+  background-color: #edeef7;
+  font: 16px/1.6 Arial, Helvetica, sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* globale */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #7868e8;
+  border-radius: 0.5em;
+  height: 30px;
+  padding: 5px 10px;
+  color: #e4fbff;
+}
+
+.button:hover {
+  background-color: #e4fbff;
+  color: #7868e8;
+}
+
+/* Header */
+#main-header {
+  background-color: #b8b5ff;
+  color: #e4fbff;
+  min-height: 70px;
+  padding-top: 30px;
+  border-bottom: solid 0.5rem #7868e8;
+}
+
+#main-header h1 {
+  float: left;
+  line-height: 1;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+#main-header a {
+  color: #e4fbff;
+  padding-right: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* navigation */
+
+#navbar li {
+  display: inline;
+}
+
+#navbar {
+  float: right;
+  padding-top: 20px;
+}
+
+#main-header .responsive,
+#navbar .current a {
+  color: #7868e8;
+  font-weight: bold;
+}
+
+#main-header a:hover {
+  color: #edeef7;
+}
+
+/* Show Case */
+#show {
+  min-height: 400px;
+  background: rgb(0, 0, 0, 0.7) url("../img/showcase.jpg") no-repeat 0 -110px;
+  background-blend-mode: darken;
+  color: white;
+}
+
+#show h2 {
+  margin: 100px 0 10px;
+  font-size: 55px;
+}
+
+#show p {
+  font-size: 20px;
+}
+
+/* Subscribe */
+#subscribe {
+  background-color: #b8b5ff;
+  padding: 30px;
+}
+
+#subscribe h3 {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#subscribe form {
+  float: right;
+}
+
+#subscribe input {
+  height: 20px;
+  padding: 3px;
+}
+
+/* Skills */
+#skills .skill img {
+  width: 100px;
+}
+
+#skills .skill {
+  width: 30%;
+  float: left;
+  padding: 2px;
+}
+
+#skills {
+  margin-top: 30px;
+}
+
+/* About */
+#about {
+  float: left;
+  width: 65%;
+  margin-top: 30px;
+}
+
+#about h3 {
+  margin-top: 0;
+}
+/* Sidebar */
+.sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 30px;
+  background-color: #b8b5ff;
+  color: #333;
+  padding: 20px;
+}
+
+/* Text box */
+.textbox {
+  background-color: #b8b5ff;
+  padding: 20px;
+  color: #333;
+}
+
+/* Service */
+#service {
+  float: left;
+  width: 65%;
+  margin-top: 30px;
+}
+
+#service h4 {
+  margin-top: 0;
+}
+
+#service .servicebox {
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+/* Side bar Form */
+.sidebar form input,
+.sidebar form textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* Footer */
+#main-footer {
+  background-color: #7868e8;
+  color: #e4fbff;
+  margin-top: 30px;
+  padding: 30px 0 20px;
+  text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  #main-header h1,
+  #main-header #nav,
+  #subscribe h3,
+  #subscribe form,
+  #skills .skill,
+  #about,
+  #service {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  #main-header {
+    padding-bottom: 20px;
+  }
+
+  #show h2 {
+    margin-top: 40px;
+  }
+
+  #show {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #subscribe .button {
+    display: block;
+    width: 85%;
+    margin: auto;
+  }
+
+  #subscribe form input {
+    width: 82%;
+    margin: 5px auto;
+  }
+
+  #about,
+  #service h4 {
+    margin-top: 30px;
+  }
+
+  .sidebar {
+    float: none;
+    width: 100%;
+  }
+}
